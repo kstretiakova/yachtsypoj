@@ -1,0 +1,71 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.no-scroll {
+  overflow: hidden;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .section-title {
+    font-size: 108px;
+    line-height: 124px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .page-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
